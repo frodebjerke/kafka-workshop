@@ -17,10 +17,10 @@ Write a program that does the following
 
 Write a program that does the following
 
-[list of jedis](http://www.imdb.com/list/ls055340042/)
-
 1. Adds another jedi to the starwars topic.
 1. Gracefully shuts down after the message has been sent.
+
+[list of jedis](http://www.imdb.com/list/ls055340042/)
 
 ## Third challenge
 *Learn to write a consumer*
