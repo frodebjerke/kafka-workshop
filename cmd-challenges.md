@@ -10,6 +10,11 @@ Use the commandline tool [kafkacat](https://github.com/edenhill/kafkacat#install
 1. Write a single message containing just a simple 'hello' to a topic called ex1.
 1. Read all messages from the ex1 topic.
 
+   *Should yield*
+   ````
+   hello
+   ````
+
 ## Second challenge
 *In this challenge you will learn to lookup information via kafkacat and actively controlling your consumers offset-pointer.*
 
