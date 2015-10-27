@@ -17,12 +17,15 @@ Write a program that does the following
 
 Write a program that does the following
 
-[list of jedis](http://www.imdb.com/list/ls055340042/)
-
 1. Adds another jedi to the starwars topic.
 1. Gracefully shuts down after the message has been sent.
+
+[list of jedis](http://www.imdb.com/list/ls055340042/)
 
 ## Third challenge
 *Learn to write a consumer*
 
-Write a program that keeps count of the number of jedis registered at any given time.
+Write a program that does the following
+
+1. Keeps count of the number of jedis registered at any given time.
+1. Continuosly adds jedi's to the starwars topic at random intervals.

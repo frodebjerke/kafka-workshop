@@ -10,11 +10,16 @@ Use the commandline tool [kafkacat](https://github.com/edenhill/kafkacat#install
 1. Write a single message containing just a simple 'hello' to a topic called ex1.
 1. Read all messages from the ex1 topic.
 
+   *Should yield*
+   ````
+   hello
+   ````
+
 ## Second challenge
 *In this challenge you will learn to lookup information via kafkacat and actively controlling your consumers offset-pointer.*
 
 1. Find all topics existing on the Kafka broker.
-1. Read the two last messages from the topic named after a movie.
+1. Read the two last messages from the topic named after a movie which is situated a long time ago in a galaxy far, far away....
 
     *Should yield*
     ````
