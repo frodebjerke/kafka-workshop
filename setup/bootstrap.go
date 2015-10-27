@@ -11,14 +11,16 @@ var (
     brokerList = []string{"192.168.99.100:9092"}
 )
 
-func GetProducer() sarama.SyncProducer {
+func GetProducer(kafkaHost string) sarama.SyncProducer {
     config := sarama.NewConfig()
+
+    brokers := []string{kafkaHost}
 
     config.Producer.RequiredAcks = sarama.WaitForLocal
 	config.Producer.Compression = sarama.CompressionSnappy
 	config.Producer.Flush.Frequency = 500 * time.Millisecond
 
-    producer, err := sarama.NewSyncProducer(brokerList, config)
+    producer, err := sarama.NewSyncProducer(brokers, config)
 	if err != nil {
 		log.Fatalln("Failed to start Sarama producer:", err)
 	}

@@ -8,14 +8,16 @@
 
 !! Before running `setup.sh` verify that your docker-ip matches the KAFKA_ADVERTISED_HOST_NAME variable found in the file `kafka-docker/docker-compose.yml`
 
+**Default docker ip is set to 192.168.99.100. Set DOCKER_IP to specify another IP.**
+
 Start kafka and populate
 ````
-./setup.sh
+DOCKER_IP=127.0.0.1 ./setup.sh
 ````
 
 Reset kafka data
 ````
-./reset.sh
+DOCKER_IP=127.0.0.1 ./reset.sh
 ````
 
 ## Challenges

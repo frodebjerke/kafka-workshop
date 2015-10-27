@@ -8,9 +8,9 @@ import (
     "github.com/frodebjerke/kafka-workshop/setup"
 )
 
-func Ex2() {
+func Ex2(kafkaHost string) {
     fmt.Println("Create topic for exercise 2")
-    producer := setup.GetProducer()
+    producer := setup.GetProducer(kafkaHost)
 
     for _, jedi := range Jedis {
         producer.SendMessage(&sarama.ProducerMessage{
